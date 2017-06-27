@@ -136,8 +136,24 @@ npm install sass-loader@3.1.2 node-sass@3.4.2 --save-dev
 
 -----------------------------------------------------------
 
-Adding test for your application
+Component life cycle
+1. componentWillUnmount:function(){
+      alert('Component did unmount');  
+    },
+    
+    => This event happen when the component is unmout from the UI, example when we switch from tab 1 to tab 2, tab 1 will be unmount and this event will be invoked.
+    
+2. componentWillMount: function(){
+    this happens when the component first render, before showing to the screen
+}
 
+3. componentWillUpdate(nextProps, nextState)
+=> happen everytime the component is revisited again or updated
+
+4. componentDidMount : happen when the components is finished rendering
+
+5. ComponentDidUpdate(nextProps, nextState)
+=> happens when the updated progress is finished
  
  
 

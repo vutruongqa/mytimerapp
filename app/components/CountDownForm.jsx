@@ -19,7 +19,6 @@ var CountDownForm = React.createClass({
                     <button className="button expanded">
                         Start
                     </button>
-                    
                 </form>
             </div>
         
