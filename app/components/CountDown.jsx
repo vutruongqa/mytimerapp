@@ -1,13 +1,14 @@
 var React = require('react');
 
-var Timer = React.createClass({
+var CountDown = React.createClass({
     render: function(){
         return(
             <div>
-                    <p>Timer.jsx</p>
+                    <p>Countdown.jsx</p>
             </div>
+        
         );
     }
 });
 
-module.exports = Timer;
+module.exports = CountDown;
