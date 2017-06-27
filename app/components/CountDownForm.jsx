@@ -1,5 +1,6 @@
 var React = require('react');
 var Clock = require('Clock');
+var Control = require('Control');
 
 var CountDownForm = React.createClass({
     onFormSubmit: function(e){
