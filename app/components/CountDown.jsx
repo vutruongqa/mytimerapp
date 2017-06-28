@@ -30,13 +30,9 @@ var CountDown = React.createClass({
       }  
     },
     
-    componentWillUpdate:function(nextProps, nextState){
-      console.log('Component will update');  
-    },
-    
     componentWillUnmount:function(){
       clearInterval(this.timer);
-        this.timer = undefined;
+      this.timer = undefined;
     },
     
     startTimer:function(){
@@ -80,6 +76,7 @@ var CountDown = React.createClass({
         };
         return(
             <div>
+               <h1 className="page-title">CountDown App</h1>
                 <Clock totalSeconds={count}/>
                 {renderControlArea()}
             </div>
